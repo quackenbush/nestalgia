@@ -12,9 +12,10 @@ Platforms supported
 
 Screenshots
 ===========
-[Zelda Video](https://vimeo.com/90365281)
+(Click for a video of Zelda)
 
-![](http://i.imgur.com/ZBcbAmw.png)
+[![](http://i.imgur.com/ZBcbAmw.png)](https://vimeo.com/90365281)
+
 ![](http://i.imgur.com/2MGUfOA.png)
 ![](http://i.imgur.com/BSLNRcw.png)
 
