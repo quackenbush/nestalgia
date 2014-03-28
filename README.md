@@ -3,27 +3,33 @@ NEStalgia
 
 NEStalgia, a Nintendo Entertainment System (NES) Emulator.  By Payton Quackenbush.
 
-Written in C, specifically C99.
+Written in C99.
 
+Platforms supported
+-------------------
+- OSX
+- Linux
+
+Screenshots
+===========
 [Zelda Video](https://vimeo.com/90365281)
 
 ![](http://i.imgur.com/ZBcbAmw.png)
 ![](http://i.imgur.com/2MGUfOA.png)
 ![](http://i.imgur.com/BSLNRcw.png)
 
-Implements:
-- N6502 CPU
+Implements
+----------
+- 8-bit N6502 CPU
 - PPU (picture processing unit)
 - APU (audio processor)
-- Many Mappers.
+- Mappers 0, 1, 2, 4, 7, and 87
 
-Requirements:
+Requirements
+------------
+- GCC/Clang toolchain
+- GNU Make
 - SDL library for Graphics and Audio
-
-Platforms supported
--------------------
-OSX
-Linux
 
 Compilation Instructions
 ------------------------
