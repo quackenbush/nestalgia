@@ -1,0 +1,59 @@
+Subject: [nesdev] the skinny on nes scrolling
+Date: Tue, 13 Apr 1999 16:42:00 -0600
+From: loopy <zxcvzxcv@netzero.net>
+Reply-To: nesdev@onelist.com
+To: nesdev@onelist.com
+
+From: loopy <zxcvzxcv@netzero.net>
+
+---------
+the current information on background scrolling is sufficient for most games;
+however, there are a few that require a more complete understanding.
+
+here are the related registers:
+        (v) vram address, a.k.a. 2006 which we all know and love.  (16 bits)
+        (t) another temp vram address (16 bits)
+           (you can really call them 15 bits, the last isn't used)
+       (x) tile X offset (3 bits)
+
+the ppu uses the vram address for both reading/writing to vram thru 2007,
+and for fetching nametable data to draw the background.  as it's drawing the
+background, it updates the address to point to the nametable data currently
+being drawn.  bits 0-11 hold the nametable address (-$2000).  bits 12-14 are
+the tile Y offset.
+
+---------
+stuff that affects register contents:
+(sorry for the shorthand logic but i think it's easier to see this way)
+
+2000 write:
+        t:0000 1100 0000 0000=d:0000 0011
+
+2005 first write:
+        t:0000 0000 0001 1111=d:1111 1000
+        x=d:0000 0111
+
+2005 second write:
+        t:0000 0011 1110 0000=d:1111 1000
+        t:0111 0000 0000 0000=d:0000 0111
+
+2006 first write:
+        t:0011 1111 0000 0000=d:0011 1111
+        t:1100 0000 0000 0000=0
+
+2006 second write:
+        t:0000 0000 1111 1111=d:1111 1111
+        v=t
+
+scanline start (if background and sprites are enabled):
+        v:0000 0100 0001 1111 =t:0000 0100 0001 1111
+
+frame start (line 0) (if background and sprites are enabled):
+        v=t
+
+note!  2005 and 2006 share the toggle that selects between first/second
+writes.  reading 2002 will clear it.
+
+note!  all of this info agrees with the tests i've run on a real nes.  BUT
+if there's something you don't agree with, please let me know so i can verify
+it.

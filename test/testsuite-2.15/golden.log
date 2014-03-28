@@ -1,0 +1,446 @@
+6502 init
+6502 reset
+Install c64 harness
+“
+Commodore 64 Emulator Test Suite
+Public Domain, no Copyright
+
+basic commands - ok
+ldab
+ldab - ok
+ldaz
+ldaz - ok
+ldazx
+ldazx - ok
+ldaa
+ldaa - ok
+ldaax
+ldaax - ok
+ldaay
+ldaay - ok
+ldaix
+ldaix - ok
+ldaiy
+ldaiy - ok
+staz
+staz - ok
+stazx
+stazx - ok
+staa
+staa - ok
+staax
+staax - ok
+staay
+staay - ok
+staix
+staix - ok
+staiy
+staiy - ok
+ldxb
+ldxb - ok
+ldxz
+ldxz - ok
+ldxzy
+ldxzy - ok
+ldxa
+ldxa - ok
+ldxay
+ldxay - ok
+stxz
+stxz - ok
+stxzy
+stxzy - ok
+stxa
+stxa - ok
+ldyb
+ldyb - ok
+ldyz
+ldyz - ok
+ldyzx
+ldyzx - ok
+ldya
+ldya - ok
+ldyax
+ldyax - ok
+styz
+styz - ok
+styzx
+styzx - ok
+stya
+stya - ok
+taxn
+taxn - ok
+tayn
+tayn - ok
+txan
+txan - ok
+tyan
+tyan - ok
+tsxn
+tsxn - ok
+txsn
+txsn - ok
+phan
+phan - ok
+plan
+plan - ok
+phpn
+phpn - ok
+plpn
+plpn - ok
+inxn
+inxn - ok
+inyn
+inyn - ok
+dexn
+dexn - ok
+deyn
+deyn - ok
+incz
+incz - ok
+inczx
+inczx - ok
+inca
+inca - ok
+incax
+incax - ok
+decz
+decz - ok
+deczx
+deczx - ok
+deca
+deca - ok
+decax
+decax - ok
+asln
+asln - ok
+aslz
+aslz - ok
+aslzx
+aslzx - ok
+asla
+asla - ok
+aslax
+aslax - ok
+lsrn
+lsrn - ok
+lsrz
+lsrz - ok
+lsrzx
+lsrzx - ok
+lsra
+lsra - ok
+lsrax
+lsrax - ok
+roln
+roln - ok
+rolz
+rolz - ok
+rolzx
+rolzx - ok
+rola
+rola - ok
+rolax
+rolax - ok
+rorn
+rorn - ok
+rorz
+rorz - ok
+rorzx
+rorzx - ok
+rora
+rora - ok
+rorax
+rorax - ok
+andb
+andb - ok
+andz
+andz - ok
+andzx
+andzx - ok
+anda
+anda - ok
+andax
+andax - ok
+anday
+anday - ok
+andix
+andix - ok
+andiy
+andiy - ok
+orab
+orab - ok
+oraz
+oraz - ok
+orazx
+orazx - ok
+oraa
+oraa - ok
+oraax
+oraax - ok
+oraay
+oraay - ok
+oraix
+oraix - ok
+oraiy
+oraiy - ok
+eorb
+eorb - ok
+eorz
+eorz - ok
+eorzx
+eorzx - ok
+eora
+eora - ok
+eorax
+eorax - ok
+eoray
+eoray - ok
+eorix
+eorix - ok
+eoriy
+eoriy - ok
+clcn
+clcn - ok
+secn
+secn - ok
+cldn
+cldn - ok
+sedn
+sedn - ok
+clin
+clin - ok
+sein
+sein - ok
+clvn
+clvn - ok
+adcb
+NOTE: Skipping from 'adcb' to 'cmpb'
+
+cmpb - ok
+cmpz
+cmpz - ok
+cmpzx
+cmpzx - ok
+cmpa
+cmpa - ok
+cmpax
+cmpax - ok
+cmpay
+cmpay - ok
+cmpix
+cmpix - ok
+cmpiy
+cmpiy - ok
+cpxb
+cpxb - ok
+cpxz
+cpxz - ok
+cpxa
+cpxa - ok
+cpyb
+cpyb - ok
+cpyz
+cpyz - ok
+cpya
+cpya - ok
+bitz
+bitz - ok
+bita
+bita - ok
+brkn
+brkn - ok
+rtin
+rtin - ok
+jsrw
+jsrw - ok
+rtsn
+rtsn - ok
+jmpw
+jmpw - ok
+jmpi
+jmpi - ok
+beqr
+NOTE: Skipping from 'beqr' to 'nopn'
+
+nopn - ok
+nopb
+nopb - ok
+nopz
+nopz - ok
+nopzx
+nopzx - ok
+nopa
+nopa - ok
+nopax
+nopax - ok
+asoz
+asoz - ok
+asozx
+asozx - ok
+asoa
+asoa - ok
+asoax
+asoax - ok
+asoay
+asoay - ok
+asoix
+asoix - ok
+asoiy
+asoiy - ok
+rlaz
+rlaz - ok
+rlazx
+rlazx - ok
+rlaa
+rlaa - ok
+rlaax
+rlaax - ok
+rlaay
+rlaay - ok
+rlaix
+rlaix - ok
+rlaiy
+rlaiy - ok
+lsez
+lsez - ok
+lsezx
+lsezx - ok
+lsea
+lsea - ok
+lseax
+lseax - ok
+lseay
+lseay - ok
+lseix
+lseix - ok
+lseiy
+lseiy - ok
+rraz
+rraz - ok
+rrazx
+rrazx - ok
+rraa
+rraa - ok
+rraax
+rraax - ok
+rraay
+rraay - ok
+rraix
+rraix - ok
+rraiy
+rraiy - ok
+dcmz
+dcmz - ok
+dcmzx
+dcmzx - ok
+dcma
+dcma - ok
+dcmax
+dcmax - ok
+dcmay
+dcmay - ok
+dcmix
+dcmix - ok
+dcmiy
+dcmiy - ok
+insz
+insz - ok
+inszx
+inszx - ok
+insa
+insa - ok
+insax
+insax - ok
+insay
+insay - ok
+insix
+insix - ok
+insiy
+insiy - ok
+laxz
+laxz - ok
+laxzy
+laxzy - ok
+laxa
+laxa - ok
+laxay
+laxay - ok
+laxix
+laxix - ok
+laxiy
+laxiy - ok
+axsz
+axsz - ok
+axszy
+axszy - ok
+axsa
+axsa - ok
+axsix
+axsix - ok
+alrb
+alrb - ok
+arrb
+NOTE: Skipping from 'arrb' to 'aneb'
+
+aneb - ok
+lxab
+lxab - ok
+sbxb
+sbxb - ok
+shaay
+shaay - ok
+shaiy
+shaiy - ok
+shxay
+shxay - ok
+shyax
+shyax - ok
+shsay
+shsay - ok
+ancb
+ancb - ok
+lasay
+lasay - ok
+sbcb(eb)
+NOTE: Skipping from 'sbcb(eb)' to 'trap1'
+
+trap1 - ok
+trap2
+trap2 - ok
+trap3
+trap3 - ok
+trap4
+trap4 - ok
+trap5
+trap5 - ok
+trap6
+trap6 - ok
+trap7
+trap7 - ok
+trap8
+trap8 - ok
+trap9
+trap9 - ok
+trap10
+trap10 - ok
+trap11
+trap11 - ok
+trap12
+trap12 - ok
+trap13
+trap13 - ok
+trap14
+trap14 - ok
+trap15
+trap15 - ok
+trap16
+trap16 - ok
+trap17
+trap17 - ok
+branchwrap
+branchwrap - ok
+mmufetch
+Done!
+
+CPU stopped: 788534631 instructions, 2800343882 cycles

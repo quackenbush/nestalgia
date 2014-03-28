@@ -1,0 +1,3 @@
+#!/bin/sh
+OPTIONS= #--simulate-cache=yes
+./build.sh && valgrind --tool=callgrind $OPTIONS ./build/local/nestalgia $*

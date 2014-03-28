@@ -1,0 +1,6 @@
+C64 Test Suite Performance
+
+Tested on Ubuntu 64 on Dell Xeon, with -O3 Makefile
+
+Unified memory with inline functions - 10.68s
+Segmented with callbacks             - 14.73s

@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Abort on error codes
+set -e
+set -o pipefail
+
+# ----------------------------------------
+NES="./bin/nes"
+
+# CPU tests
+for ROM in `ls roms/cpu/blargg/rom_singles/*.nes`
+do
+    $NES --blargg=1 ${ROM}
+done
+
+# PPU tests
+for ROM in `ls roms/ppu/blargg/*.nes`
+do
+    $NES --blargg=1 ${ROM}
+done
+
+for ROM in `ls roms/ppu/blargg_ppu/*.nes`
+do
+    $NES --blargg=2 ${ROM}
+done
+
+# APU tests
+for ROM in `ls roms/apu/blargg/*.nes`
+do
+    $NES --blargg=1 ${ROM}
+done
+
+# ----------------------------------------
+
+ACTUAL=result.log
+GOLDEN=test/testsuite-2.15/golden.log
+
+$NES --test | tee $ACTUAL
+
+echo "----------------------------------------"
+echo "Diff'ing logs [${GOLDEN}] vs [${ACTUAL}]"
+diff --minimal $GOLDEN $ACTUAL
+
+echo "Regression PASS"
+
+# ----------------------------------------
+

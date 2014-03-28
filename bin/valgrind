@@ -1,0 +1,2 @@
+#!/bin/sh
+./build.sh && valgrind ./build/local/nestalgia "$@"
