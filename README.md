@@ -7,6 +7,10 @@ Written in C, specifically C99.
 
 [Zelda Video](https://vimeo.com/90365281)
 
+![](http://i.imgur.com/ZBcbAmw.png)
+![](http://i.imgur.com/2MGUfOA.png)
+![](http://i.imgur.com/BSLNRcw.png)
+
 Implements:
 - N6502 CPU
 - PPU (picture processing unit)
@@ -24,11 +28,16 @@ Linux
 Compilation Instructions
 ------------------------
 To compile and run in one step:
+
+```
 % ./bin/nes PATH_TO_ROM
+```
 
 To compile and run manually:
+```
 % make
-% ./build/PLATFORM/nes PATH_TO_ROM
+% ./build/PLATFORM/nestalgia PATH_TO_ROM
+```
 
 Games supported
 ---------------
@@ -41,6 +50,7 @@ Games supported
 - Dr. Mario
 - Dragon Warrior 1, 2, 4
 - Excite Bike
+- Final Fantasy 1
 - Galaga
 - Maniac Mansion
 - Super Mario 1, 2
