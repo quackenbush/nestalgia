@@ -14,10 +14,10 @@ Screenshots
 ===========
 (Click for a video of Zelda)
 
-[![](http://i.imgur.com/ZBcbAmw.png)](https://vimeo.com/90365281)
+<a href = "https://vimeo.com/90365281"><img src = "http://i.imgur.com/ZBcbAmw.png" alt = "Zelda"/></a>
 
-![](http://i.imgur.com/2MGUfOA.png)
-![](http://i.imgur.com/BSLNRcw.png)
+<img src = "http://i.imgur.com/2MGUfOA.png" alt = "Super Mario 1" />
+<img src = "http://i.imgur.com/BSLNRcw.png" alt = "Tecmo Bowl" />
 
 Implements
 ----------
